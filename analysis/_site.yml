@@ -1,0 +1,17 @@
+name: "rna_seq_data_processing"
+output_dir: ../docs
+navbar:
+  title: "rna_seq_data_processing"
+  left:
+  - text: Home
+    href: index.html
+  - text: About
+    href: about.html
+  - text: License
+    href: license.html
+output:
+  workflowr::wflow_html:
+    toc: yes
+    toc_float: yes
+    theme: cosmo
+    highlight: textmate
