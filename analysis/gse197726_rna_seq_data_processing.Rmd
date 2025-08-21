@@ -34,3 +34,11 @@ done
 
 ```
 
+
+No trimming procedures were performed as the based were of good quality. No adapter content was present. But if one needs to trim the low quality sequences and the adapter, they can run the following
+
+# ```{r}
+
+```
+
+
