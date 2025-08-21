@@ -1,0 +1,36 @@
+---
+title: "gse197726_rna_seq_data_processing"
+author: "Vishnu_AM"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(eval = FALSE)  # disable executio
+```
+
+
+Downloading SRA file using SRAToolKit
+
+```{r}
+code xyz
+```
+
+Converting SRA files to fastq files
+
+```{r}
+
+```
+
+Running FastQC in the fastq files
+
+Keep all the .fastq files in a folder and then run the following code in that folder
+
+```{r}
+for fq in *.fastq.gz; do
+  fastqc "$fq" -o /path/to/output/folder
+done
+
+
+```
+
