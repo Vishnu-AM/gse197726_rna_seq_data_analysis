@@ -361,7 +361,7 @@ div.tocify {
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
 <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
-workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger"
+workflowr <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span>
 </button>
 </p>
@@ -372,8 +372,8 @@ aria-hidden="true"></span>
 </li>
 <li>
 <a data-toggle="tab" href="#checks"> Checks <span
-class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> </a>
+class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
+</a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -386,9 +386,9 @@ aria-hidden="true"></span> </a>
 </p>
 <p>
 <strong>Checks:</strong> <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6
+class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7
 <span class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> 1
+aria-hidden="true"></span> 0
 </p>
 <p>
 <strong>Knit directory:</strong> <code>rna_seq_data_processing/</code>
@@ -411,21 +411,18 @@ versions</em> tab lists the development history.
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges">
-<span class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted
-changes </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate">
+<span class="glyphicon glyphicon-ok text-success"
+aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date
+</a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguncommittedchanges"
+<div id="strongRMarkdownfilestronguptodate"
 class="panel-collapse collapse">
 <div class="panel-body">
-<p>The R Markdown file has staged changes. To know which version of the
-R Markdown file created these results, you’ll want to first commit it to
-the Git repo. If you’re still working on the analysis, you can ignore
-this warning. When you’re finished, you can run
-<code>wflow_publish</code> to commit the R Markdown file and build the
-HTML.</p>
+<p>Great! Since the R Markdown file has been committed to the Git
+repository, you know the exact version of the code that produced these
+results.</p>
 </div>
 </div>
 </div>
@@ -516,15 +513,15 @@ project makes it easier to run your code on other machines.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomVishnuAMgse197726rnaseqdataanalysistreef51247dfb36498ad68fd0daca02dffb9f3aaf740targetblankf51247da">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomVishnuAMgse197726rnaseqdataanalysistreec067962b7b2b84cda71617dedc70ebb1b027155dtargetblankc067962a">
 <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span> <strong>Repository version:</strong>
-<a href="https://github.com/Vishnu-AM/gse197726_rna_seq_data_analysis/tree/f51247dfb36498ad68fd0daca02dffb9f3aaf740" target="_blank">f51247d</a>
+<a href="https://github.com/Vishnu-AM/gse197726_rna_seq_data_analysis/tree/c067962b7b2b84cda71617dedc70ebb1b027155d" target="_blank">c067962</a>
 </a>
 </p>
 </div>
 <div
-id="strongRepositoryversionstrongahrefhttpsgithubcomVishnuAMgse197726rnaseqdataanalysistreef51247dfb36498ad68fd0daca02dffb9f3aaf740targetblankf51247da"
+id="strongRepositoryversionstrongahrefhttpsgithubcomVishnuAMgse197726rnaseqdataanalysistreec067962b7b2b84cda71617dedc70ebb1b027155dtargetblankc067962a"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -534,7 +531,7 @@ reproducibility.
 </p>
 <p>
 The results in this page were generated with repository version
-<a href="https://github.com/Vishnu-AM/gse197726_rna_seq_data_analysis/tree/f51247dfb36498ad68fd0daca02dffb9f3aaf740" target="_blank">f51247d</a>.
+<a href="https://github.com/Vishnu-AM/gse197726_rna_seq_data_analysis/tree/c067962b7b2b84cda71617dedc70ebb1b027155d" target="_blank">c067962</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -548,9 +545,8 @@ depends on. Below is the status of the Git repository when the results
 were generated:
 </p>
 <pre><code>
-Staged changes:
-    New:        analysis/gse197726_rna_seq_data_processing.Rmd
-    New:        analysis/gse197726_wgcna_code.Rmd
+Unstaged changes:
+    Modified:   analysis/gse197726_wgcna_code.Rmd
 
 </code></pre>
 <p>
@@ -566,9 +562,90 @@ have uncommitted changes.
 </div>
 <div id="versions" class="tab-pane fade">
 <p>
-There are no past versions. Publish this analysis with
-<code>wflow_publish()</code> to start tracking its development.
+These are the previous versions of the repository in which changes were
+made to the R Markdown
+(<code>analysis/gse197726_rna_seq_data_processing.Rmd</code>) and HTML
+(<code>docs/gse197726_rna_seq_data_processing.html</code>) files. If
+you’ve configured a remote Git repository (see
+<code>?wflow_git_remote</code>), click on the hyperlinks in the table
+below to view the files as they were in that past version.
 </p>
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+File
+</th>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+<th>
+Message
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/Vishnu-AM/gse197726_rna_seq_data_analysis/blob/c067962b7b2b84cda71617dedc70ebb1b027155d/analysis/gse197726_rna_seq_data_processing.Rmd" target="_blank">c067962</a>
+</td>
+<td>
+Vishnu A M
+</td>
+<td>
+2025-08-21
+</td>
+<td>
+Publish my analysis codes
+</td>
+</tr>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/Vishnu-AM/gse197726_rna_seq_data_analysis/blob/25cbe71d69db3d3fa1ccfc47ca657d61609d7daf/analysis/gse197726_rna_seq_data_processing.Rmd" target="_blank">25cbe71</a>
+</td>
+<td>
+Vishnu A M
+</td>
+<td>
+2025-08-21
+</td>
+<td>
+started documenting
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/Vishnu-AM/gse197726_rna_seq_data_analysis/25cbe71d69db3d3fa1ccfc47ca657d61609d7daf/docs/gse197726_rna_seq_data_processing.html" target="_blank">25cbe71</a>
+</td>
+<td>
+Vishnu A M
+</td>
+<td>
+2025-08-21
+</td>
+<td>
+started documenting
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 <hr>
 </div>
 </div>
@@ -582,15 +659,29 @@ in that folder</p>
 <pre class="r"><code>for fq in *.fastq.gz; do
   fastqc &quot;$fq&quot; -o /path/to/output/folder
 done</code></pre>
-<br>
-<p>
-<button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
-<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
-Session information
-</button>
-</p>
-<div id="workflowr-sessioninfo" class="collapse">
-<pre class="r"><code>sessionInfo()</code></pre>
+<p>No trimming procedures were performed as the based were of good
+quality. No adapter content was present. But if one needs to trim the
+low quality sequences and the adapter, they can run the following</p>
+<div id="r" class="section level1">
+<h1>```{r}</h1>
+<pre><code>
+
+
+&lt;br&gt;
+&lt;p&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-workflowr btn-workflowr-sessioninfo&quot;
+  data-toggle=&quot;collapse&quot; data-target=&quot;#workflowr-sessioninfo&quot;
+  style = &quot;display: block;&quot;&gt;
+  &lt;span class=&quot;glyphicon glyphicon-wrench&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  Session information
+&lt;/button&gt;
+&lt;/p&gt;
+
+&lt;div id=&quot;workflowr-sessioninfo&quot; class=&quot;collapse&quot;&gt;
+
+``` r
+sessionInfo()</code></pre>
+</div>
 </div>
 </div>
 </div>
